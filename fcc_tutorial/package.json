@@ -1,0 +1,19 @@
+{
+  "name": "fcc_php-tutorial",
+  "version": "1.0.0",
+  "description": "PHP Programming Language Tutorial - Full Course, Youtube https://www.youtube.com/watch?v=OK_JCtrrv-c",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lone-DO/php.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lone-DO/php/issues"
+  },
+  "homepage": "https://github.com/Lone-DO/php#readme"
+}
