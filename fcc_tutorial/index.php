@@ -10,15 +10,15 @@
 
 <body>
   <form action="index.php" method="get">
-    <label for="name">Name:</label>
-    <input type="text" name="name"><br>
-    <label for="age">Age:</label>
-    <input type="text" name="age"> <br>
+    <label for="num1">First Number</label>
+    <input type="number" name="num1"><br>
+    <label for="num2">Second Number</label>
+    <input type="number" name="num2"><br>
+
     <input type="submit">
   </form>
   <br>
-  <p>Your name is <?php echo $_GET["name"]; ?></p>
-  <p>You are <?php echo $_GET["age"]; ?> Years old</p>
+  Answer is: <?php echo $_GET["num1"] + $_GET["num2"] ?>
 
   <!-- <h1>Hello World!</h1> -->
 </body>
