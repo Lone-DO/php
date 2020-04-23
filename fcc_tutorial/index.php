@@ -10,7 +10,11 @@
 
 <body>
   <?php
-  echo "<h1>Hello Globe!</h1>";
+  $characterName = "Lone";
+  $characterAge = 30;
+
+  echo "<h1>Hello $characterName !</h1>";
+  echo "<span>You are $characterAge years old!</span>";
   echo "<hr>";
   echo "<p>This is a PHP Site</p>";
   ?>
