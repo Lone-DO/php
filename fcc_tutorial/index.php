@@ -10,11 +10,13 @@
 
 <body>
   <?php
-  $characterName = "Lone";
-  $characterAge = 30;
+  $string = "To be or not to be";
+  $integer = 30;
+  $float = 3.14;
+  $truthy = true;
+  $falsey = false;
+  $null = null;
 
-  echo "<h1>Hello $characterName !</h1>";
-  echo "<span>You are $characterAge years old!</span>";
   echo "<hr>";
   echo "<p>This is a PHP Site</p>";
   ?>
