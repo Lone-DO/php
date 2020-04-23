@@ -17,22 +17,36 @@
   // $falsey = false;
   // $null = null;
 
-  $phrase = "Giraffe Academy";
+  $modular = 12 % 3;
+  $absolute  = abs(-111);
+  $power = pow(2, 4);
+  $squareroot = sqrt(144);
+  $max = max(2, 10, 50);
+  $min =  min(11, 21, 41);
+  $round = round(3.2);
+  $ceil = ceil(3.1);
+  $floor = floor(3.9);
 
-  echo strtolower($phrase);
+  echo  $modular;
   echo "<hr>";
-  echo strtoupper("dog says 'bark'");
+  echo  $absolute;
   echo "<hr>";
-  echo strlen("hello world");
+  echo  $power;
   echo "<hr>";
-  echo $phrase[0];
+  echo $squareroot;
   echo "<hr>";
-  echo str_replace("Giraffe", "Neko", $phrase);
+  echo $max;
   echo "<hr>";
-  echo substr($phrase, 8, 3);
+  echo  $min;
+  echo "<hr>";
+  echo  $round;
+  echo "<hr>";
+  echo $ceil;
+  echo "<hr>";
+  echo $floor;
 
   echo "<hr>";
-  echo "<p>This is a PHP Site</p>";
+  echo "<p>This is a PHP Site $round</p>";
   ?>
   <!-- <h1>Hello World!</h1> -->
 </body>
