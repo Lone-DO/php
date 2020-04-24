@@ -14,9 +14,9 @@
     <input type="submit">
   </form>
   <hr>
-  <?php
 
-  ?>
+  <?php ?>
+
 </body>
 
 </html>
