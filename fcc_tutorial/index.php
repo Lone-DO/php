@@ -13,6 +13,7 @@
 
     <input type="submit">
   </form>
+  <hr>
   <?php
 
   ?>
