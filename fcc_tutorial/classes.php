@@ -5,15 +5,15 @@ class Book
   var $author;
   var $pages;
   var $release;
+
+  function __construct($Title, $Author, $Pages)
+  {
+    $this->title = $Title;
+    $this->author = $Author;
+    $this->pages = $Pages;
+    echo "New Book Created: $Title<br>";
+  }
 }
 
-$book1 = new Book;
-$book1->title = "Witcher";
-$book1->author = "Funhaus";
-$book1->pages = 500;
-$book1->release = "05/01/2001";
-
-$book2 = new Book;
-$book2->title = "Lord of the Rings";
-$book2->author = "JK Rowling";
-$book2->pages = 400;
+$book1 = new Book("Witcher", "Funhaus", 500);
+$book2 = new Book("Lord of the Rings", "JK Rowling", 400);
