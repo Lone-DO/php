@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html>
+<form method="POST" action="function.php">
 
-<head>
-  <meta charset="utf-8">
-  <title>
-    PHP Tutorial: functions
-  </title>
-</head>
+  <input type="submit">
+</form>
+<hr>
 
-<body>
-  <form method="POST" action="function.php">
+<?php
+function greet($user, $age)
+{
+  echo "Hello $user, you were last online $age months ago.";
+}
 
-    <input type="submit">
-  </form>
-  <hr>
+function cubed($num)
+{
+  return $num * $num * $num;
+}
 
-  <?php
-  function greet($user, $age)
-  {
-    echo "Hello $user, you were last online $age months ago.";
-  }
-
-  function cubed($num)
-  {
-    return $num * $num * $num;
-  }
-
-  $result = cubed(4);
-  ?>
+$result = cubed(4);
+?>
 
 
-  <h3><?php greet("Lone", 10); ?><h3>
-      <i>Cubed: <?php echo $result; ?></i>
-</body>
-
-</html>
+<h3><?php greet("Lone", 10); ?><h3>
+    <i>Cubed: <?php echo $result; ?></i>

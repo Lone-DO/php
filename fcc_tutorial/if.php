@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>
-    PHP Tutorial Website
-  </title>
-</head>
-
-<body>
   <hr>
 
   <?php
@@ -42,6 +31,3 @@
   ?>
 
   <hr>
-</body>
-
-</html>
