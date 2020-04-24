@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>
-    PHP Tutorial Website
-  </title>
-</head>
+<?php include "head.html" ?>
 
 <body>
-  <form method="POST" action="index.php">
+  <?php include "header.html" ?>
 
-    <input type="submit">
+  <form method="POST" action="index.php">
+    <input type="submit" value="Sum" style="width: 50%; margin:1rem;">
   </form>
   <hr>
 
-  <?php ?>
-
+  <?php include "footer.html" ?>
 </body>
 
 </html>
