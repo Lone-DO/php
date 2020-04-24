@@ -80,3 +80,37 @@ class Movie // Visibility Modifiers
 $avatar = new Movie("Avatar: The Last Airbender", "PG-13");
 $avatar->setRating("A");
 echo $avatar->getRating();
+echo "<hr>";
+
+class Chef
+{
+  function makePasta()
+  {
+    echo "The chef makes pasta";
+  }
+
+  function makePizza()
+  {
+    echo "The chef makes a suprmeme pizza";
+  }
+
+  function makeStirFry()
+  {
+    echo "The chef makes Shitake Stir Fry";
+  }
+}
+
+class MasterChef extends Chef
+{
+  function makeSalad()
+  {
+    echo "The chef makes a hearty Salad";
+  }
+  function makeGuac()
+  {
+    echo "The chef stirs up a spicy Guacamole";
+  }
+}
+
+$master = new MasterChef();
+$master->makeGuac();
