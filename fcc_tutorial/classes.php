@@ -34,9 +34,49 @@ class Person
   }
   function greet()
   {
-    echo "Hello, My name is $this->name, I'm a $this->age year old $this->gender, and graduated with a $this->gpa GPA!";
+    echo "Hello, My name is $this->name, I'm a $this->age year old $this->gender, and graduated with a $this->gpa GPA!<br>";
   }
 }
 
 $person1 = new Person("John Wayne", 54, 3.5, "Male");
 $person1->greet();
+
+class Movie // Visibility Modifiers
+{
+  // public = var, private
+  public $title;
+  private $rating;
+
+  function __construct($title, $rating)
+  {
+    $this->title = $title;
+    $this->setRating($rating);
+
+    echo "New Movie Created: $title, $rating<br>";
+  }
+  function getRating()
+  {
+    return $this->rating;
+  }
+  function setRating($newRating)
+  {
+    $newRating = strtoupper($newRating);
+
+    switch ($newRating) {
+      case "G":
+      case "PG":
+      case "PG-13":
+      case "R":
+      case "NR":
+      case "A":
+        $this->rating = $newRating;
+        break;
+      default:
+        $this->rating = "NR";
+    }
+  }
+}
+
+$avatar = new Movie("Avatar: The Last Airbender", "PG-13");
+$avatar->setRating("A");
+echo $avatar->getRating();
