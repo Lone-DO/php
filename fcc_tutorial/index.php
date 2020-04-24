@@ -5,12 +5,18 @@
 
 <body>
   <?php include "header.html" ?>
-
-  <form method="POST" action="index.php">
-    <input type="submit" value="Sum" style="width: 50%; margin:1rem;">
-  </form>
+  <hr>
+  <?php
+  $title = "First Article";
+  $author = "Lone_DO";
+  $wordCount = 513;
+  include "article-header.php"
+  ?>
   <hr>
 
+
+
+  <hr>
   <?php include "footer.html" ?>
 </body>
 
